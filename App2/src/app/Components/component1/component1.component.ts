@@ -5,14 +5,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './component1.component.html',
   styleUrls: ['./component1.component.css']
 })
+
+
 export class Component1Component implements OnInit {
+  num:number;
+  sueldos=[234,456,237,990,45];
+  
 
   constructor() { }
-  num:any=0
+  
 
-  sueldos=[234,456,237]
   ngOnInit() {
-    this.num=0
+    this.num=0;
   }
 
 }

@@ -1,8 +1,14 @@
-<p>
-  component1 works!
-</p>
+
+
+<h1 *ngIf="num!=0">El numero es: {{num}}</h1>
+
+<br><br>
+<input  type="number" [(ngModel)]="num">
+<br><br>
+<strong *ngIf="num>3">Mayor que 3</strong>
+<strong *ngIf="num<3">Menor que 3</strong>
 
 
 <div *ngFor="let sueldo of sueldos">
-  <div>sueldo:{{sueldo}}</div>
+  <ul>CANTIDAD: {{sueldo}}</ul>
 </div>
