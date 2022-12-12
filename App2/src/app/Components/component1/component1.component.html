@@ -1,14 +1,21 @@
 
 
-<h1 *ngIf="num!=0">El numero es: {{num}}</h1>
-
+<h3 >El numero es: {{num}}</h3>
+<button (click)="nav()">Pagina 2</button>
 <br><br>
+<button (click)="almacenar()">Almacenar</button>
+<button (click)="recuperar()">Recuperar</button>
+
 <input  type="number" [(ngModel)]="num">
 <br><br>
 <strong *ngIf="num>3">Mayor que 3</strong>
 <strong *ngIf="num<3">Menor que 3</strong>
+<strong *ngIf="num==3">La cantidad es 3</strong>
+
+<p>{{suma}}</p>
+
 
 
 <div *ngFor="let sueldo of sueldos">
-  <ul>CANTIDAD: {{sueldo}} :D</ul>
+  <ul>CANTIDAD: {{sueldo}}</ul>
 </div>
