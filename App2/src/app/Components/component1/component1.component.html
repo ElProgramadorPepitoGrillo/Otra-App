@@ -1,21 +1,19 @@
 
 
-<h3 >El numero es: {{num}}</h3>
-<button (click)="nav()">Pagina 2</button>
 <br><br>
-<button (click)="almacenar()">Almacenar</button>
-<button (click)="recuperar()">Recuperar</button>
+<br>
+<p>Nombre:</p><input  type="text" [(ngModel)]="Nombre"><br>
 
-<input  type="number" [(ngModel)]="num">
+<p>Correo</p>
+<input  type="text" [(ngModel)]="correo"><br>
+<p>Contraseña</p>
+<input  type="text" [(ngModel)]="contrasena"><br>
+<p>Confirmar Contraseña</p>
+<input  type="text" [(ngModel)]="confirmarcontra"><br>
+<P>Numero de telefono</P>
+<input  type="number" [(ngModel)]="telefono"><br>
 <br><br>
-<strong *ngIf="num>3">Mayor que 3</strong>
-<strong *ngIf="num<3">Menor que 3</strong>
-<strong *ngIf="num==3">La cantidad es 3</strong>
-
-<p>{{suma}}</p>
+<button (click)="almacenar()" (click)="nav()" >IMPRIMIR BOLETO</button>
 
 
 
-<div *ngFor="let sueldo of sueldos">
-  <ul>CANTIDAD: {{sueldo}}</ul>
-</div>

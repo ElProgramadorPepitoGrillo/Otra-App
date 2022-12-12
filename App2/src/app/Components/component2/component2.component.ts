@@ -7,15 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Component2Component implements OnInit {
 
-  constructor() { }
- suma:any
- result:any
+  constructor() { }  
+  Nombre:any
+  correo:any
+  contraseña:any
+  confirmarcontra:any
+  telefono:any
   ngOnInit() {
+    this.recuperar()
   }
 
   recuperar(){
+    this.Nombre= localStorage.getItem('Nombre')
+    this.correo= localStorage.getItem('correo')
+    this.contraseña= localStorage.getItem('contraseña')
+    this.confirmarcontra= localStorage.getItem('confir' )
+    this.telefono= localStorage.getItem('telefono')
 
-    this.result=localStorage.getItem('valor')//Para recuperar un item
-    this.suma=2+Number(this.result)   
   }
 }

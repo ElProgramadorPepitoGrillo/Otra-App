@@ -9,29 +9,29 @@ import { Router } from '@angular/router';
 
 
 export class Component1Component implements OnInit {
-  num:number;
-  suma:number
-  result:any
-  sueldos=[234,456,237,990,45,78];//Matriz con NgFor
+
+  Nombre:Text
+  correo:Text
+  contrasena:Text
+  confirmarcontra:Text
+  telefono:number
   
 
   constructor(private router:Router) { }//Navegar
   ngOnInit() {
-    this.num=1;//Muestra al iniciar 1 en num
     localStorage.clear();//Borrar datos en LocalStorge
   }
 
   almacenar(){
-    localStorage.setItem('valor', this.num.toString())
-    localStorage.setItem('CLAVE ','Almacenado')
+    localStorage.setItem('Nombre', this.Nombre.toString())
+    localStorage.setItem('correo', this.correo.toString())
+    localStorage.setItem('contraseña', this.contrasena.toString())
+    localStorage.setItem('confir', this.confirmarcontra.toString())
+    localStorage.setItem('telefono', this.telefono.toString())
+
   }
 
 
-  recuperar(){
-
-    this.result=localStorage.getItem('valor')//Para recuperar un item de valor en localstorge
-    this.suma=2+Number(this.result)   
-  }
 
   nav(){
     this.router.navigate(['2'])
