@@ -1,5 +1,7 @@
 
-
+<div class="atras">
+<div class="adelante">
+<h1>DATOS</h1>
 <br><br>
 <br>
 <p>Nombre:</p><input  type="text" [(ngModel)]="Nombre"><br>
@@ -9,11 +11,12 @@
 <p>Contraseña</p>
 <input  type="text" [(ngModel)]="contrasena"><br>
 <p>Confirmar Contraseña</p>
-<input  type="text" [(ngModel)]="confirmarcontra"><br>
+<input  type="text" [(ngModel)]="confirmarcontra" ><br>
 <P>Numero de telefono</P>
-<input  type="number" [(ngModel)]="telefono"><br>
+<input  type="text" [(ngModel)]="telefono"><br>
 <br><br>
-<button (click)="almacenar()" (click)="nav()" >IMPRIMIR BOLETO</button>
+<button (click)="almacenar()" (click)="nav()" *ngIf="contrasena==confirmarcontra" >IMPRIMIR BOLETO</button>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
 
-
-
+</div>

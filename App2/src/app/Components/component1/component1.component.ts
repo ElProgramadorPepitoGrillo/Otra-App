@@ -15,7 +15,7 @@ export class Component1Component implements OnInit {
   correo:Text
   contrasena:Text
   confirmarcontra:Text
-  telefono:number
+  telefono:Text
   
 
   constructor(private router:Router) { }//Navegar
@@ -25,7 +25,7 @@ export class Component1Component implements OnInit {
 
   almacenar(){
     localStorage.setItem('Nombre', this.Nombre.toString())
-    localStorage.setItem('correo', this.correo.toString(), EmailValidator)
+    localStorage.setItem('correo', this.correo.toString())
     localStorage.setItem('contraseña', this.contrasena.toString())
     localStorage.setItem('confir', this.confirmarcontra.toString())
     localStorage.setItem('telefono', this.telefono.toString())

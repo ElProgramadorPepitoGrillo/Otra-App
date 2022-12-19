@@ -1,16 +1,32 @@
+div{
+    background-image: url(https://i.pinimg.com/564x/d8/71/a8/d871a880ff2b30d669e2068b39769020.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 50%;
+}
 h1{
     text-align: left;
-    color: #613659;
+    color: #DBBE09;
+    text-align: center;
 }
 h2{
     text-align: left;
-    color:#C197D2 ;
+    color:#E1C744 ;
+    text-align: center;
 }
 h3{
     text-align: left;
-    color: #D3B1C2;
+    color: #E4BD57;
+    text-align: center;
 }
 h4{
     text-align: left;
     color:black;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+table{
+    text-align: center;
 }
