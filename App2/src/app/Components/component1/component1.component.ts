@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmailValidator } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -24,7 +25,7 @@ export class Component1Component implements OnInit {
 
   almacenar(){
     localStorage.setItem('Nombre', this.Nombre.toString())
-    localStorage.setItem('correo', this.correo.toString())
+    localStorage.setItem('correo', this.correo.toString(), EmailValidator)
     localStorage.setItem('contraseña', this.contrasena.toString())
     localStorage.setItem('confir', this.confirmarcontra.toString())
     localStorage.setItem('telefono', this.telefono.toString())
